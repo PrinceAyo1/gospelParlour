@@ -35,3 +35,37 @@ function changeHeaderColor() {
 
 // Now perform the action over intervals (milliseocnds):
 setInterval("changeHeaderColor()", 500);
+
+// trying colour changer for background colour
+
+var body = document.querySelector("body");
+
+// Then you can interface with the object.
+
+// Interface with the style.
+//You will see a ton of options show up!
+body.style.backgroundColor = "red";
+
+// Now let's connect it to the script to
+// change it once every second to a random color!
+
+// Random Color Function:
+
+// http://stackoverflow.com/questions/1484506/random-color-generator-in-javascript
+function getRandomColor() {
+  var letters = "0123456789ABCDEF";
+  var color = "#";
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+// Simple function for clarity
+function changeBodyColor() {
+  colorInput = getRandomColor();
+  body.style.backgroundColor = colorInput;
+}
+
+// Now perform the action over intervals (milliseocnds):
+setInterval("changeBodyColor()", 36000);
