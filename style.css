@@ -7,12 +7,12 @@ body {
   justify-content: space-around; */
 }
 
-div.sections {
+/* div.section {
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin: 5em;
-}
+} */
 
 img {
   width: 50%;
